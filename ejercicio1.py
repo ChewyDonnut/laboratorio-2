@@ -5,14 +5,14 @@ matriz2=[]
 #a=random.randint(2,5)
 a=1
 b=2
-for i in range(a):
+for i in range(a):#ingresa filas de matriz
     aux=[]
     aux2=[]
     fila=int(input("ingrese  fila 1\n"))
     cola=int(input("ingrese  fila 2\n"))
     aux.append(fila)
     aux2.append(cola)
-    for j in range(b):
+    for j in range(b): # ingresa columnas de matriz
         fil=int(input("ingrese columna de  1\n"))
         col=int(input("ingrese columna de  2\n"))
         aux.append(fil)
@@ -23,11 +23,8 @@ for i in range(a):
 matriz3=[]
 for i in range(a):
     aux3=[]
-    suma=0
     for j in range(b):
-        suma+=0
-        suma=(matriz1[i][j]-matriz2[i][j])
-        aux3.append(suma)
+        aux3.append((matriz1[i][j]-matriz2[j][i]))
     matriz3.append(aux3)    
 print(matriz1)    
 print("\n")
